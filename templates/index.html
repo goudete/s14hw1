@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HW 1</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!-- Styles -->
+    <link href="{{ url_for('static', filename='./css/index.css') }}" rel="stylesheet">
+</head>
+
+    <body>
+      <style>
+        /* body {background-color: coral;} */
+        body {background-color: rgb(40,40,40);}
+      </style>
+
+      <div class="container">
+        <div class="jumbotron mt-5">
+          <h1 class="display-4">Hello, Welcome to Homework 1!</h1>
+          <p class="lead">Linear Regression vs Decision Tree</p>
+          <hr class="my-4">
+          <h4>The models are given these features: 4 Beds, 2.5 Baths, 3005 SQFT, 15 years old, Lotsize: 17903.0, Garage:1</h4>
+
+          <hr>
+          <div class="row mt-5">
+            <div class="col-6">
+              <h3>Linear Regression Prediction: {{regr_model}}</h3>
+            </div>
+            <div class="col-6">
+              <h3>Decision Tree Prediction: {{tree_model}}</h3>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </body>
+
+</html>
